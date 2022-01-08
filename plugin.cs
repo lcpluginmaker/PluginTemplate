@@ -1,12 +1,12 @@
-﻿using System.IO;
-using ILeoConsole;
+﻿using ILeoConsole;
 using ILeoConsole.Plugin;
 using ILeoConsole.Core;
 
-// change this to your plugin name
+// make sure the namespace is consistent over all files (don't forget the .csproj file!)
 namespace LeoConsole_PluginTemplate
 {
 
+  // ----- data from running LeoConsole instance -----
   public class ConsoleData : IData
   {
     public static User _User;
@@ -17,6 +17,7 @@ namespace LeoConsole_PluginTemplate
     public string DownloadPath { get { return _DownloadPath; } set { _DownloadPath = value; } }
   }
   
+  // ----- main plugin class -----
   // change this to your plugin name
   public class PluginTemplate : IPlugin
   {
@@ -31,16 +32,16 @@ namespace LeoConsole_PluginTemplate
     public List<ICommand> Commands { get { return _Commands; } set { _Commands = value; } }
     
     public void PluginMain() {
-      // get data from LeoConsole
+      // --- get data from LeoConsole ---
       _data = new ConsoleData();
       
-      // register commands
+      // --- register commands ---
       _Commands = new List<ICommand>();
-      // change this to your plugin name
+      // change this to your plugin name (same as in command.cs)
       _Commands.Add(new PluginTemplate());
     }
   }
 }
 
-// this says vim to use 2 spaces instead of tabs
+// this tells vim to use 2 spaces instead of tabs VIM rules XD
 // vim: tabstop=2 softtabstop=2 shiftwidth=2 expandtab

@@ -12,7 +12,7 @@ plugins. Create LeoConsole plugins more quickly!
  - Go to `./LeoConsole-PluginTemplate.csproj` and specify the location of your
    `ILeoConsole.dll` file.
  - Check out `./plugin.cs` and `./command.cs` and change the variables/classes
-   to your plugin name (see the comments).
+   to your plugin name (the comments in the code will help you).
  - Compile your plugin with `dotnet build` (or use Visual Studio's tools).
  - Either install it manually or use
    [apkg](https://github.com/alexcoder04/LeoConsole-apkg) to install it to your

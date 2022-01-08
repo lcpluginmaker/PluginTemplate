@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
+    <!-- if you want to rename the root namespace make sure you do it in all of the files -->
     <RootNamespace>LeoConsole_PluginTemplate</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
@@ -9,7 +10,7 @@
 
   <ItemGroup>
     <Reference Include="ILeoConsole">
-       <!-- change this path to your location of ILeoConsole.dll -->
+      <!-- change this path to your location of ILeoConsole.dll -->
       <HintPath>/usr/include/LeoConsole/ILeoConsole.dll</HintPath>
     </Reference>
   </ItemGroup>
