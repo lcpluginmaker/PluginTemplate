@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>LeoConsole_PluginTemplate</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="ILeoConsole">
+       <!-- change this path to your location of ILeoConsole.dll -->
+      <HintPath>/usr/include/LeoConsole/ILeoConsole.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
