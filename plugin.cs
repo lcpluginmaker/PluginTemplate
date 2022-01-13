@@ -18,10 +18,10 @@ namespace LeoConsole_PluginTemplate
   }
   
   // ----- main plugin class -----
-  // change this to your plugin name
+  // TODO: change this to your plugin name
   public class PluginTemplate : IPlugin
   {
-    // change this to your plugin name and description
+    // TODO: change this to your plugin name and description
     public string Name { get { return "plugin template"; } }
     public string Explanation { get { return "a template to create LeoConsole plugins more quickly"; } }
     
@@ -31,17 +31,19 @@ namespace LeoConsole_PluginTemplate
     private List<ICommand> _Commands;
     public List<ICommand> Commands { get { return _Commands; } set { _Commands = value; } }
     
-    public void PluginMain() {
+    public void PluginMain()
+    {
       // --- get data from LeoConsole ---
       _data = new ConsoleData();
       
       // --- register commands ---
       _Commands = new List<ICommand>();
-      // change this to your plugin name (same as in command.cs)
+      // TODO: change this to your plugin name (same as in command.cs)
       _Commands.Add(new PluginTemplate());
     }
   }
 }
 
-// this tells vim to use 2 spaces instead of tabs VIM rules XD
+// this tells vim to use 2 spaces instead of tabs, otherwise it's too wide for my taste, but you can adjust it to your needs
+// if you don' use vim, ignore this, but VIM rules XD
 // vim: tabstop=2 softtabstop=2 shiftwidth=2 expandtab
