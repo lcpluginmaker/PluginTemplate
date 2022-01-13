@@ -10,7 +10,7 @@
 
   <ItemGroup>
     <Reference Include="ILeoConsole">
-      <!-- change this path to your location of ILeoConsole.dll -->
+      <!-- TODO: change this path to your location of ILeoConsole.dll -->
       <HintPath>/usr/include/LeoConsole/ILeoConsole.dll</HintPath>
     </Reference>
   </ItemGroup>
