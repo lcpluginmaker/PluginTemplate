@@ -6,10 +6,10 @@ using ILeoConsole.Core;
 namespace LeoConsole_apkg
 {
   // ----- your command -----
-  // change this to your plugin name
+  // TODO: change this to your plugin name
   public class PluginTemplateCommand : ICommand
   {
-    // change these to your command name and description
+    // TODO: change these to your command name and description
     public string Name { get { return "plugin-template-test"; } } // this what you type into the console to run the command
     public string Description { get { return "test plugin template"; } } // this is the description in the help command
     public Action CommandFunktion { get { return () => Command(); } }
@@ -18,8 +18,9 @@ namespace LeoConsole_apkg
     public IData data = new ConsoleData();
 
     // --- this is what actually runs ---
-    public void Command() {
-      Console.WriteLine("hello world");
+    public void Command()
+    {
+      Console.WriteLine("hello world"); // sample hello world
     }
   }
 }
