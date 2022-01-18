@@ -3,7 +3,7 @@ using ILeoConsole;
 using ILeoConsole.Plugin;
 using ILeoConsole.Core;
 
-namespace LeoConsole_apkg
+namespace LeoConsole_PluginTemplate
 {
   // ----- your command -----
   // TODO: change this to your plugin name
