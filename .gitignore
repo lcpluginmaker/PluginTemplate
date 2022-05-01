@@ -3,3 +3,4 @@ Debug
 obj
 *.exe
 *.dll
+*.lcpkg
