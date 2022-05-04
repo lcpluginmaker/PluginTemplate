@@ -1,0 +1,18 @@
+{
+  "manifestVersion": 2.1,
+  "packageName": "plugin-template",
+  "packageVersion": "0.0.1",
+  "build": {
+    "command": "dotnet",
+    "args": ["build", "--nologo"],
+    "folder": ".",
+    "dlls": ["PluginTemplate.dll"],
+    "share": "./share"
+  },
+  "project": {
+    "maintainer": "-",
+    "email": "-",
+    "homepage": "-",
+    "bugTracker": "-"
+  }
+}
