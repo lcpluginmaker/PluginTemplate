@@ -34,6 +34,12 @@ namespace LeoConsole_PluginTemplate
     private List<ICommand> _Commands;
     public List<ICommand> Commands { get { return _Commands; } set { _Commands = value; } }
     
+    // this runs as your plugin is loaded
+    public void PluginInit()
+    {
+    }
+    
+    // this runs as data got registered
     public void PluginMain()
     {
       // --- get data from LeoConsole ---
@@ -43,6 +49,11 @@ namespace LeoConsole_PluginTemplate
       _Commands = new List<ICommand>();
       // TODO: change this to your plugin name (same as in command.cs)
       _Commands.Add(new PluginTemplate());
+    }
+    
+    // this runs as LeoConsole is about to shut down
+    public void PluginShutdown()
+    {
     }
   }
 }
