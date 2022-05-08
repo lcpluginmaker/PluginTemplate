@@ -16,12 +16,11 @@ namespace LeoConsole_PluginTemplate
     private string[] _InputProperties;
     public string[] InputProperties { get { return _InputProperties; } set { _InputProperties = value; } }
     public IData data = new ConsoleData();
-    private LConsole lconsole = new LConsole();
 
     // --- this is what actually runs ---
     public void Command()
     {
-      lconsole.WriteLine("§aHello world!§r"); // colored hello world
+      LConsole.WriteLine("§aHello world!§r"); // colored hello world
     }
   }
 }
