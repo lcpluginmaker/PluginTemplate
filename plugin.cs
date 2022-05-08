@@ -15,6 +15,9 @@ namespace LeoConsole_PluginTemplate
     public string SavePath { get { return _SavePath; } set { _SavePath = value; } }
     public static string _DownloadPath;
     public string DownloadPath { get { return _DownloadPath; } set { _DownloadPath = value; } }
+    public static string _CurrentWorkingPath;
+    public string CurrentWorkingPath { get { return _CurrentWorkingPath; } set { _CurrentWorkingPath = value; } }
+
   }
   
   // ----- main plugin class -----
