@@ -39,18 +39,18 @@ namespace LeoConsole_PluginTemplate
     // this runs as your plugin is loaded
     public void PluginInit()
     {
-    }
-    
-    // this runs as data got registered
-    public void PluginMain()
-    {
-      // --- get data from LeoConsole ---
+    // --- get data from LeoConsole ---
       _data = new ConsoleData();
       
       // --- register commands ---
       _Commands = new List<ICommand>();
       // TODO: change this to your plugin name (same as in command.cs)
       _Commands.Add(new PluginTemplate());
+    }
+    
+    // this runs as data got registered
+    public void PluginMain()
+    {
     }
     
     // this runs as LeoConsole is about to shut down
