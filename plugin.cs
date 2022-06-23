@@ -49,7 +49,7 @@ namespace LeoConsole_PluginTemplate
     public void RegisterCommands()
     {
       // TODO: change this to your plugin name (same as in command.cs)
-      _Commands.Add(new PluginTemplate());
+      _Commands.Add(new PluginTemplateCommand());
     }
     
     // this runs as data and commands got registered

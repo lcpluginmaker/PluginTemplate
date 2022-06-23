@@ -13,6 +13,7 @@ namespace LeoConsole_PluginTemplate
     public string Name { get { return "plugin-template-test"; } } // this what you type into the console to run the command
     public string Description { get { return "test plugin template"; } } // this is the description in the help command
     public Action CommandFunktion { get { return () => Command(); } }
+    public Action HelpFunktion { get { return () => Help(); } }
     private string[] _InputProperties;
     public string[] InputProperties { get { return _InputProperties; } set { _InputProperties = value; } }
     public IData data = new ConsoleData();
@@ -21,6 +22,11 @@ namespace LeoConsole_PluginTemplate
     public void Command()
     {
       LConsole.WriteLine("§aHello world!§r"); // colored hello world
+    }
+
+    public void Help()
+    {
+      LConsole.WriteLine("§aHello world!§r");
     }
   }
 }
