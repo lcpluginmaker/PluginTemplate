@@ -1,7 +1,9 @@
 {
-  "manifestVersion": 2.1,
+  "manifestVersion": 3.0,
   "packageName": "plugin-template",
   "packageVersion": "0.0.1",
+  "depends": [],
+  "compatibleVersions": ["2.1.0"],
   "build": {
     "command": "dotnet",
     "args": ["build", "--nologo"],
