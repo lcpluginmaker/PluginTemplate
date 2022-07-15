@@ -13,14 +13,14 @@ plugins. Create LeoConsole plugins more quickly!
    `ILeoConsole.dll` file.
  - Check out `./plugin.cs` and `./command.cs` and change the variables/classes
    to your plugin name (the comments in the code will help you).
- - Change project info (project name, homepage, email) in `manifest.apkg.json`.
+ - Change project info (project name, homepage, email) in `manifest.json`.
  - Compile your plugin with `dotnet build` (or use Visual Studio's tools) to generate
    the `.dll`-file for testing, use [apkg-builder](https://github.com/alexcoder04/LeoConsole-apkg-builder)
-   to generate an installable `.lcpkg` package archive.
+   to generate an installable `.lcp` package archive.
  - Copy the `.dll` file into your LeoConsole's `data/plugins` folder.
  - Test if it works.
  - Have fun developing!
- - Refer to the [LeoConsole wiki](https://github.com/BoettcherDasOriginal/LeoConsole/wiki/Plugin-Tutorial)
+ - Refer to the [LeoConsole wiki](https://github.com/BoettcherDasOriginal/LeoConsole/wiki)
    for more information about plugin writing.
  - Report any bugs or feature requests for this template in the
    [issues](https://github.com/alexcoder04/LeoConsole-PluginTemplate/issues).
